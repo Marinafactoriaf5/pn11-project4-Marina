@@ -1,15 +1,15 @@
 <script>
-  import Header from './lib/Header.svelte'
-  import Body from './lib/Body.svelte'
+    import Header from "./lib/Header.svelte";
+    import Carousel from "./lib/Carousel.svelte";
+    import Hero from "./lib/Hero.svelte";
+    import Catalog from "./lib/Catalog.svelte";
+    
 </script>
 
 <main>
-  <div>
-  <div class="header">
     <Header />
-  </div>
-  <div class="Body">
-    <Body />
-  </div>
+    <Carousel />
+    <Hero />
+    <Catalog />
+    
 </main>
-
