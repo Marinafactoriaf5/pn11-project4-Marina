@@ -1,18 +1,76 @@
 <div class="hero">
-    <img src= "src/assets/cover.jpeg" alt="a man in a bed with a woman" class="heroImg">
+    <img
+        src="src/assets/cover.jpeg"
+        alt="a man in a bed with a woman"
+        class="heroImg"
+    />
+    <h1>Aquí venen les millors produccions de l’any</h1>
+    <h3>
+        Parla de les nostres pelis a les festes per anar de guay. Realment sino
+        mires Filmin, no tens ni idea de cinema.
+    </h3>
+    <h6>Per ser el més chachi posa aquí el teu correuet. No ho dubtis!</h6>
+    <section>
+        <input placeholder="El teu super correu" />
+        <button><strong>COMENÇAR</strong></button>
+    </section>
 </div>
 
-
-
 <style>
-    .heroImg{
-        height: 810px;
-        width: 1440px;
-        position:relative;
+    .heroImg {
+        height: auto;
+        width: 1600px;
+        position:absolute;
         margin-left: -80px;
         margin-top: -20px;
         z-index: -5;
         opacity: 0.6;
         display: flex;
     }
+
+    input{
+        border-radius: 8px;
+        width: 450px;
+        height: 48px;
+        stroke: 3px;
+        border-color: #6F7082;
+        background-color: #060612;
+        color:#6F7082;
+        font-weight: bold;
+    }
+
+        button {
+        background-color: #02ffa1;
+        width: 140px;
+        height: 48px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 15px;
+        margin-left: 10px;
+        }
+
+        h1, h6{
+            max-width: 1100px;
+            margin: 30px;
+        }
+
+        h1{
+            font-size: 64px;
+        }
+
+        h3{
+            font-size: 24px;
+            max-width: 800px;
+        }
+
+        h6{
+            font-size: 18px;
+        }
+
+        .hero{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
 </style>

@@ -1,4 +1,6 @@
 <script>
+    export let url;
+
     const options = {
         method: "GET",
         headers: {
@@ -10,26 +12,15 @@
 
     let movies = [];
 
-    fetch(
-        "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc",
-        options
-    )
+    fetch(url, options)
         .then((response) => response.json())
         .then((data) => (movies = data.results))
         .catch((err) => console.error(err));
-
 </script>
 
+<h3>Películes destacades</h3>
 <div>
     {#each movies as movie}
-        <img
-            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-            alt={movie.title}
-        />
-        <img
-            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-            alt={movie.title}
-        />
         <img
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
@@ -40,12 +31,22 @@
 <style>
     img {
         height: 300px;
+        object-fit: cover;
+        border-radius: 3px;
     }
 
     div {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        flex-direction: row;
+        max-width: 100%;
+
+    }
+
+    h3 {
+        display: flex;
     }
 </style>

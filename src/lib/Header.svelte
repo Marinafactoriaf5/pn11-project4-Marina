@@ -38,8 +38,6 @@
     </article>
 </header>
 
-<header />
-
 <style>
     .logoFilmin {
         height: 37px;
