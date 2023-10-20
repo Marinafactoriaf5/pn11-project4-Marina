@@ -1,6 +1,6 @@
 <div class="hero">
     <img
-        src="src/assets/cover1.jpeg"
+        src="src/assets/Cover1.jpeg"
         alt="a man in a bed with a woman"
         class="heroImg"
     />

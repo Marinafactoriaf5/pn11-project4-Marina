@@ -2,7 +2,7 @@
 </script>
 
 <header>
-    <img src="src/assets/logo.png" alt="logo filmin" class="logoFilmin" />
+    <img src="src/assets/Logo.png" alt="logo filmin" class="logoFilmin" />
 
     <ul>
         <li>
@@ -34,7 +34,7 @@
         </button>
     </div>
     <article>
-        <img src="src/assets/glass.png" alt="magnifying glass" class="glass" />
+        <img src="src/assets/Glass.png" alt="magnifying glass" class="glass" />
     </article>
 </header>
 
@@ -48,7 +48,7 @@
     }
 
     header {
-        background-image: url("src/assets/rectangle.png");
+        background-image: url("src/assets/Rectangle.png");
         width: 1440px;
         height: 60px;
         display: flex;
