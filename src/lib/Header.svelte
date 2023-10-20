@@ -99,5 +99,6 @@
         height: 44px;
         width: 50px;
         margin-top: 8px;
+        margin-left: 15px;
     }
 </style>

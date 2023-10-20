@@ -1,6 +1,6 @@
 <div class="hero">
     <img
-        src="src/assets/cover.jpeg"
+        src="src/assets/cover1.jpeg"
         alt="a man in a bed with a woman"
         class="heroImg"
     />
@@ -19,27 +19,27 @@
 <style>
     .heroImg {
         height: auto;
-        width: 1600px;
-        position:absolute;
-        margin-left: -80px;
+        width: 1440px;
+        position: absolute;
+        margin-left: 0px;
         margin-top: -20px;
         z-index: -5;
-        opacity: 0.6;
+        opacity: 0.3;
         display: flex;
     }
 
-    input{
+    input {
         border-radius: 8px;
         width: 450px;
         height: 48px;
         stroke: 3px;
-        border-color: #6F7082;
+        border-color: #6f7082;
         background-color: #060612;
-        color:#6F7082;
+        color: #6f7082;
         font-weight: bold;
     }
 
-        button {
+    button {
         background-color: #02ffa1;
         width: 140px;
         height: 48px;
@@ -47,30 +47,33 @@
         border: none;
         margin-top: 15px;
         margin-left: 10px;
-        }
+    }
 
-        h1, h6{
-            max-width: 1100px;
-            margin: 30px;
-        }
+    h1,
+    h6 {
+        max-width: 1100px;
+        margin: 20px;
+    }
 
-        h1{
-            font-size: 64px;
-        }
+    h1 {
+        font-size: 64px;
+        margin-top: 60px;
+    }
 
-        h3{
-            font-size: 24px;
-            max-width: 800px;
-        }
+    h3 {
+        font-size: 24px;
+        max-width: 800px;
+        margin:0px;
+    }
 
-        h6{
-            font-size: 18px;
-        }
+    h6 {
+        font-size: 18px;
+    }
 
-        .hero{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin-bottom: 100px;
-        }
+    .hero {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
 </style>

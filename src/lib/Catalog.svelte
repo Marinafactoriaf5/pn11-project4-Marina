@@ -16,9 +16,8 @@
         .then((response) => response.json())
         .then((data) => (movies = data.results))
         .catch((err) => console.error(err));
-</script>
 
-<h3>Películes destacades</h3>
+</script>
 <div>
     {#each movies as movie}
         <img
@@ -43,10 +42,9 @@
         margin-bottom: 50px;
         flex-direction: row;
         max-width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
 
     }
 
-    h3 {
-        display: flex;
-    }
 </style>
