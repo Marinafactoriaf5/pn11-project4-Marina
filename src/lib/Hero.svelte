@@ -22,7 +22,7 @@
         width: 1440px;
         position: absolute;
         margin-left: 0px;
-        margin-top: -20px;
+        margin-top: -50px;
         z-index: -5;
         opacity: 0.3;
         display: flex;
@@ -30,13 +30,14 @@
 
     input {
         border-radius: 8px;
-        width: 450px;
+        width: 430px;
         height: 48px;
         stroke: 3px;
         border-color: #6f7082;
         background-color: #060612;
         color: #6f7082;
         font-weight: bold;
+        padding-left: 20px;
     }
 
     button {
@@ -63,7 +64,7 @@
     h3 {
         font-size: 24px;
         max-width: 800px;
-        margin:0px;
+        margin: 0px;
     }
 
     h6 {

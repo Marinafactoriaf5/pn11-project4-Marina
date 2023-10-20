@@ -1,7 +1,7 @@
 <script>
     import Header from "./lib/Header.svelte";
     import Hero from "./lib/Hero.svelte";
-    import Title from "./lib/Title.svelte"
+    import Title from "./lib/Title.svelte";
     import Catalog from "./lib/Catalog.svelte";
 </script>
 

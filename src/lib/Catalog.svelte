@@ -17,7 +17,20 @@
         .then((data) => (movies = data.results))
         .catch((err) => console.error(err));
 
+    const rotateLeft = (e) => {
+        const transitioningImage = movies[movies.length - 1];
+        movies = [
+            movies[movies.length - 1],
+            ...movies.slice(0, movies.length - 1),
+        ];
+    };
+
+    const rotateRight = (e) => {
+        const transitioningImage = movies[0];
+        movies = [...movies.slice(1, movies.length), movies[0]];
+    };
 </script>
+
 <div>
     {#each movies as movie}
         <img
@@ -25,6 +38,14 @@
             alt={movie.title}
         />
     {/each}
+    <button id="left" on:click={rotateLeft}> ◀
+        <slot name="leftControl">
+        </slot>
+    </button>
+    <button id="right" on:click={rotateRight}> ▶
+        <slot name="rightControl">
+        </slot>
+    </button>
 </div>
 
 <style>
@@ -42,9 +63,34 @@
         margin-bottom: 50px;
         flex-direction: row;
         max-width: 100%;
-        overflow-x: scroll;
+        overflow-x:visible;
         overflow-y: hidden;
+    }
 
+    #left{
+        left:35px;
+        position: absolute;
+        display:flex ;
+        height: 300px;
+        width:40px;
+        background-color: grey;
+        opacity: 40%;
+        padding-top: 140px;
+        color: white;
+        font-size: 20px;
+    }
+
+    #right{
+        right: 35px;
+        position: absolute;
+        display:flex ;
+        height: 300px;
+        width:40px;
+        background-color: grey;
+        opacity: 40%;
+        padding-top: 140px;
+        color: white;
+        font-size: 20px;
     }
 
 </style>
